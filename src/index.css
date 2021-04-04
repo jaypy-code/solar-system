@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "B Yekan";
+  src: local("☺"), local("B Yekan"), url("./assets/font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  user-select: none;
+  font-family: "B Yekan", tahoma, Arial;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

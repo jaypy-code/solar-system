@@ -1,0 +1,65 @@
+div.player {
+    position: fixed;
+    bottom: 10vh;
+    right: 30vw;
+
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    border: 2px solid #e0e0e0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    svg {
+        position: absolute;
+
+        width: 35px;
+        height: 35px;
+
+        fill: #e0e0e0;
+
+        transition: all 0.3s;
+    }
+
+    svg.play {
+        margin-left: 4px;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+    &.play {
+        svg.play {
+            transform: scale(0);
+        }
+    }
+
+    &:not(.play) {
+        svg.pause {
+            transform: scale(0);
+        }
+    }
+
+    &.hide {
+        transform: scale(0);
+    }
+
+    &:not(.hide) {
+        transform: scale(1);
+    }
+}
